@@ -1,0 +1,16 @@
+uses crt;
+var s,i,n:longint;
+    f:text;
+begin
+  assign(f,'congdon.inp');
+  reset(f);
+  readln(f,n);
+  close(f);
+  {tinh tong: s=1+2+3+..+n}
+  s:=0;
+  for i:=1 to n do s:=s+i;
+  assign(f,'congdon.out');
+  rewrite(f);
+  write(f,'Tong =',s);
+  close(f);
+end.
