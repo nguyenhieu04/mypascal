@@ -1,0 +1,15 @@
+var     f:text;
+          i,n,s:integer;
+begin
+          assign(f,'nguyento.inp');
+          reset(f);
+          read(f,n);
+          close(f);
+          for i:=2 to n-1 do
+                if n mod i = 0 then s:=s+1;
+          assign(f,'songuyen.out');
+          rewrite(f);
+          if s<>0 then write(f,'Day khong phai so nguyen to.')
+          else write(f,'Day la so nguyen to');
+          close(f);
+ end.
