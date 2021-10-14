@@ -1,0 +1,13 @@
+var     f:text;
+          i,n,s:longint;
+begin
+          assign(f,'giaithua.inp');
+          reset(f);
+          read(f,n);
+          close(f);
+          s:=1;
+          for i:=1 to n do s:=s*i;
+          assign(f,'giai thua.out');
+          rewrite(f);
+          write(f,n,'! =',s);
+ end.
