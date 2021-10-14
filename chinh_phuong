@@ -1,0 +1,16 @@
+var       f:text;
+            n,k:integer;
+            s:real;
+begin
+            assign(f,'chinhpuong.inp');
+            reset(f);
+            read(f,n);
+            close(f);
+            s:=sqrt(n);
+            k:=trunc(s);
+            assign(f,'chinhphuong.out');
+            rewrite(f);
+            if s=k then write(f,n,' la so chinh phuong')
+            else write(f,n,' khong phai so chinh phuong');
+            close(f);
+ end.
