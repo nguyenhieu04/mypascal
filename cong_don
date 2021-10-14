@@ -1,6 +1,5 @@
-uses crt;
 var s,i,n:longint;
-    f:text;
+       f:text;
 begin
   assign(f,'congdon.inp');
   reset(f);
