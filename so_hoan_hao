@@ -1,0 +1,16 @@
+var     f:text;
+          i,n,s:integer;
+begin
+          assign(f,'sohoanhao.inp');
+          reset(f);
+          read(f,n);
+          close(f);
+          s:=0;
+          for i:=1 to n-1 do
+                if n mod i = 0 then s:=s+i;
+          assign(f,'sohoanhao.out');
+          rewrite(f);
+          if s=n then write(f,n,' la so hoan hao.')
+          else write(f,n,' khong phai so hoan hao');
+          close(f);
+ end.
