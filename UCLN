@@ -1,12 +1,14 @@
 var     f:text;
-          i,n1,n2:integer;
+          i,M,N,:integer;
 begin
           assign(f,'ucln.inp');
           reset(f);
-          read(f,n1,n2);
+          read(f,M,N);
           close(f);
-                
+           while M<>N do if M>N then M:=M-N
+                                      else N:=N-M;
           assign(f,'ucln.out');
           rewrite(f);
+          write(f,'UCLN la:',M);
           close(f);
   end.
