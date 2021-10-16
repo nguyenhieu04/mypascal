@@ -1,0 +1,12 @@
+var     f:text;
+          i,n1,n2:integer;
+begin
+          assign(f,'ucln.inp');
+          reset(f);
+          read(f,n1,n2);
+          close(f);
+                
+          assign(f,'ucln.out');
+          rewrite(f);
+          close(f);
+  end.
