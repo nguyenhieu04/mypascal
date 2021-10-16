@@ -1,5 +1,5 @@
 var     f:text;
-          i,M,N,:integer;
+          M,N,:integer;
 begin
           assign(f,'ucln.inp');
           reset(f);
